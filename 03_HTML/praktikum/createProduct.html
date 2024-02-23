@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Create Product</h1>
+    <h3>Detail Product</h3>
+    <form action="#">
+        <label for="productName">
+            Product Name:
+            <br><input required type="text" id="productName" pattern=".{6,50}">
+        </label>
+
+        <br><br>
+
+        <label for="productCategory">
+            Product Category
+            <br>
+            <select id="productCategory" name="productCategory" required>
+                <option value=""></option>
+                <option value="example">ini hanya contoh saja</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label>
+            Product Freshness :
+            <br>
+            <input type="radio" name="productFreshness" value="brandNew" required> Brand New <br>
+            <input type="radio" name="productFreshness" value="secondHand"> Second Hand <br>
+            <input type="radio" name="productFreshness" value="refurbished"> Refurbished
+        </label>
+
+        <br><br>
+
+        <label for="#">
+            Image of Product
+            <input type="file" required>
+        </label>
+
+        <p>Additional Description</p>
+        <textarea name="" id="" cols="50" rows="20" required></textarea>
+
+        <br><br>
+
+        <label for="productPrice">
+            Product Price (angka):
+            <br><br>
+            <input type="text" id="productPrice" pattern="[0-9]+" required>
+        </label>
+
+        <br><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
