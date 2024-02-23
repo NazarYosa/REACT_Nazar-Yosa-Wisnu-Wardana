@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Jost";
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3.5rem;
+  margin-right: 5rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav div {
+  width: 25%;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+nav div a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+}
+
+nav div a:hover {
+  background-color: #0d6efd;
+  color: white;
+  transition: all 0.5s;
+  border-radius: 10%;
+}
+
+/* Main */
+.sectionHero {
+  background-color: #37517e;
+  height: 92.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-weight: 700;
+  transition: background-color 1s, color 1s;
+}
+
+.leftHero h1:nth-child(1) {
+  font-size: 4rem;
+  margin-bottom: -7%;
+  transition: font-size 1s, margin-bottom 1s;
+}
+
+.leftHero h1:nth-child(2) {
+  font-size: 4rem;
+  margin-bottom: 2%;
+  transition: font-size 1s, margin-bottom 1s;
+}
+
+.leftHero p {
+  font-size: 1.5rem;
+  color: rgb(182, 179, 179);
+  margin-bottom: 10%;
+  transition: font-size 1s, color 1s, margin-bottom 1s;
+}
+
+.leftHero a:nth-child(4) {
+  padding: 1.5rem 2.5rem;
+  border-radius: 50px;
+  background-color: #47b2e4;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 7%;
+  transition: padding 1s, background-color 0.5s, color 1s;
+}
+
+.leftHero a:nth-child(5) {
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+
+.rightHero img {
+  height: 45.75rem;
+  transition: height 1s;
+}
+
+.subscribe {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0 30rem 0;
+  background-color: #f3f5fa;
+}
+
+.subscribe h3 {
+  font-size: 3em;
+  margin-bottom: 1%;
+}
+
+.subscribe p {
+  font-size: 1.5rem;
+  color: rgb(109, 108, 108);
+  margin-bottom: 2%;
+}
+
+.subscribe-container {
+  position: relative;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.email-input:hover {
+  background-color: rgb(240, 240, 240);
+  transition: all 0.5s;
+}
+
+.email-input {
+  padding: 1.3rem;
+  width: 1000px;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 0px 1px 18px -1px rgba(0, 0, 0, 0.22);
+}
+
+.subscribe-button {
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 83%;
+  background-color: #47b2e4;
+  color: white;
+  border: none;
+  border-radius: 60px;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  background-color: #3b98c4;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.info-satu h1 {
+  font-size: 2rem;
+  margin-bottom: -20px;
+}
+
+.info h1 {
+  color: #37517e;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+.info ul li {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  list-style: none;
+}
+
+.info-empat div {
+  display: flex;
+}
+
+.info-empat span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #47b2e4;
+  border-radius: 100%;
+  margin-right: 3%;
+}
+
+footer {
+  padding: 0.5rem 5rem;
+  background-color: #37517e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer p span {
+  color: #47b2e4;
+}
