@@ -1,3 +1,10 @@
-1. Melakukan Commit ke github
-2. Menyelesaikan konflik
-3. Merge branch
+1. Melakukan Commit ke GitHub:
+   Ketika Anda bekerja dengan Git, melakukan commit adalah proses untuk menyimpan perubahan yang telah Anda buat pada repositori lokal Anda. Setelah Anda puas dengan perubahan yang Anda lakukan pada file atau proyek Anda, Anda menggunakan perintah `git commit` untuk menyimpan perubahan tersebut ke dalam repositori lokal Anda. Namun, untuk menyimpan perubahan ke repositori GitHub (atau repositori yang di-hosting secara eksternal lainnya), Anda juga perlu melakukan push. Push akan mengirimkan commit-commit Anda yang baru ke repositori yang sesuai di platform GitHub sehingga perubahan tersebut dapat diakses dan dilihat oleh orang lain.
+   
+
+3. Menyelesaikan Konflik:
+   Terkadang, saat Anda mencoba untuk melakukan merge atau pull request, Git mungkin menemukan konflik antara perubahan yang Anda buat dan perubahan yang telah ada di branch target (seperti branch master). Konflik ini terjadi ketika dua atau lebih perubahan pada file yang sama saling bertentangan. Untuk menyelesaikan konflik ini, Anda perlu memeriksa dan memodifikasi file yang konflik tersebut, memutuskan bagaimana cara terbaik untuk menggabungkan perubahan tersebut secara manual. Setelah konflik diselesaikan, Anda perlu melakukan commit untuk menyimpan perubahan tersebut, dan kemudian meneruskan proses merge atau pull request.
+   
+
+5. Merge Branch:
+   Merge branch adalah proses menggabungkan perubahan dari satu branch ke branch lainnya. Misalnya, jika Anda memiliki branch fitur yang berisi pengembangan baru, dan Anda ingin menggabungkan perubahan tersebut ke dalam branch master (atau branch lainnya), Anda akan menggunakan perintah `git merge`. Git akan mencoba menggabungkan perubahan dari branch fitur ke branch master, dan jika tidak ada konflik, merge akan berhasil. Namun, jika terdapat konflik, Anda perlu menyelesaikan konflik tersebut sebelum merge dapat diselesaikan. Setelah merge selesai, perubahan dari branch fitur akan ditambahkan ke dalam branch master, dan branch fitur tersebut bisa dihapus atau tetap ada untuk pengembangan lebih lanjut.
