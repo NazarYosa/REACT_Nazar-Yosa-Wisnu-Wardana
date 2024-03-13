@@ -1,0 +1,5 @@
+1. **Komponen Berbasis**: React JS menggunakan pendekatan pengembangan berbasis komponen, di mana UI dipecah menjadi komponen-komponen yang independen. Ini memungkinkan pengembang untuk mengelola setiap bagian UI secara terpisah, meningkatkan modularitas dan perawatan kode.
+
+2. **Virtual DOM**: React memanfaatkan konsep Virtual DOM, yang merupakan representasi struktur DOM dalam memori. Dengan membandingkan perbedaan antara Virtual DOM dan DOM aktual, React dapat memperbarui hanya bagian-bagian tertentu yang diperlukan, meningkatkan kinerja aplikasi secara keseluruhan.
+
+3. **State Management**: React menyediakan sistem manajemen state yang kuat melalui konsep state lokal di setiap komponen dan juga state global melalui pustaka eksternal seperti Redux atau Context API. Ini memungkinkan pengembang untuk mengelola keadaan aplikasi dengan lebih baik, membuatnya lebih mudah untuk mengelola data dan interaksi pengguna.
