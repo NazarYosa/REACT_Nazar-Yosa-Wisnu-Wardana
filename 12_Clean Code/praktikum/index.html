@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-4">
+    <!-- Menambahkan label dan input dalam satu div untuk konsistensi -->
+    <h2 class="text-2xl font-bold mb-4">List Product</h2>
+    <form id="dataForm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+        <div class="col-span-1 md:col-span-2 lg:col-span-1">
+            <label for="productName" class="block text-gray-700">Product Name:</label>
+            <input type="text" id="productName" name="productName"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-1">
+            <label for="productCategory" class="block text-gray-700">Product Category:</label>
+            <input type="text" id="productCategory" name="productCategory"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-1">
+            <label for="productImage" class="block text-gray-700">Product Image:</label>
+            <input type="file" id="productImage" name="productImage"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-1">
+            <label for="productFreshness" class="block text-gray-700">Product Freshness:</label>
+            <input type="text" id="productFreshness" name="productFreshness"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-1">
+            <label for="additionalDescription" class="block text-gray-700">Additional Description:</label>
+            <input type="text" id="additionalDescription" name="additionalDescription"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-1">
+            <label for="productPrice" class="block text-gray-700">Product Price:</label>
+            <input type="number" id="productPrice" name="productPrice"
+                class="border border-gray-300 px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="col-span-3 flex justify-center md:justify-end">
+            <!-- Menggunakan kelas CSS untuk tombol -->
+            <button type="button" onclick="insertData()"
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Insert</button>
+            <button type="button" onclick="deleteLastData()"
+                class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 ml-4">Delete</button>
+            <button type="button" onclick="searchData()"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 ml-4">Search</button>
+        </div>
+    </form>
+
+    <!-- Memindahkan tabel ke bawah form untuk memisahkan tampilan -->
+    <table id="dataTable" class="w-full mb-4 hidden">
+        <thead>
+            <tr>
+                <!-- Menggunakan kelas CSS untuk header tabel -->
+                <th class="border px-4 py-2">No</th>
+                <th class="border px-4 py-2">Product Name</th>
+                <th class="border px-4 py-2">Product Category</th>
+                <th class="border px-4 py-2">Image of Product</th>
+                <th class="border px-4 py-2">Product Freshness</th>
+                <th class="border px-4 py-2">Additional Description</th>
+                <th class="border px-4 py-2">Product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Tentu, berikut adalah tiga poin tentang clean code:
+
+1. **Keterbacaan yang Tinggi**: Clean code harus mudah dibaca dan dipahami oleh orang lain. Ini termasuk penggunaan nama variabel dan fungsi yang deskriptif, struktur kode yang terorganisir dengan baik, dan komentar yang informatif. Dengan keterbacaan yang tinggi, pengembang lain dapat dengan cepat memahami maksud dan tujuan dari setiap bagian kode.
+
+2. **Kecilnya Duplikasi Kode**: Duplikasi kode merupakan salah satu musuh utama dalam pengembangan perangkat lunak. Clean code menghindari duplikasi kode sebisa mungkin dengan menerapkan prinsip DRY (Don't Repeat Yourself). Ini tidak hanya membuat kode lebih efisien, tetapi juga mempermudah perawatan dan pembaruan kode di masa mendatang.
+
+3. **Sesuai dengan Prinsip SOLID**: Prinsip SOLID adalah seperangkat pedoman desain yang membantu menghasilkan kode yang bersih, mudah dipahami, dan mudah dikelola. Singkatnya, SOLID merupakan singkatan dari: Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), dan Dependency Inversion Principle (DIP). Clean code mengikuti prinsip-prinsip ini untuk memastikan bahwa kode memiliki struktur yang baik dan mudah diperluas di masa depan.
