@@ -1,5 +1,5 @@
 import React from "react";
-import CreateProduct from "./assets/CreateProduct";
+import CreateProduct from "./components/CreateProduct";
 
 export default function App() {
   return (
