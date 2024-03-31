@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
+import { v4 as uuidv4 } from "uuid";
 
 export function useProductLogic() {
   const [productsList, setProductsList] = useState([]);
@@ -10,7 +11,9 @@ export function useProductLogic() {
   const [editProductId, setEditProductId] = useState(null);
 
   const generateUniqueId = () => {
-    return new Date().getTime().toString();
+    const uuid = uuidv4();
+    console.log("Generated UUID:", uuid);
+    return uuid;
   };
 
   const addOrUpdateProduct = () => {
