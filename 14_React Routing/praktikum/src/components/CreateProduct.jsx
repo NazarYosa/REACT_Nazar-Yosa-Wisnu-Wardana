@@ -25,19 +25,16 @@ export default function CreateProduct() {
   // }
 
   async function action(productId) {
-     history({
-       pathname: `/create-product/${productId}`
-     });
-  }
-
-
-
-  async function fetchDataFromAPI() {
-    const productsData = await FetchData();
-    setProducts(productsData);
+    history({
+      pathname: `/create-product/${productId}`,
+    });
   }
 
   useEffect(() => {
+    async function fetchDataFromAPI() {
+      const productsData = await FetchData();
+      setProducts(productsData);
+    }
     fetchDataFromAPI();
   }, []);
 
@@ -264,4 +261,3 @@ export default function CreateProduct() {
     </>
   );
 }
-
