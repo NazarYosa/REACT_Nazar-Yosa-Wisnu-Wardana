@@ -7,8 +7,10 @@ export default function Profile() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
+
     async function fetchData() {
       const data = await FetchDataById(id);
+          console.log(data);
       setProduct(data[0]); // Karena data dari FetchDataById adalah array, kita ambil elemen pertama
     }
     fetchData();
@@ -21,7 +23,7 @@ export default function Profile() {
           <h2 className="text-3xl font-bold mb-4">{product.productName}</h2>
           <div className="grid grid-cols-2 gap-2">
             <p className="font-semibold">Price:</p>
-            <p>${product.productPrice}</p>
+            <p>Rp. {product.productPrice}</p>
             <p className="font-semibold">Freshness:</p>
             <p>{product.productFreshness}</p>
             <p className="font-semibold">Category:</p>

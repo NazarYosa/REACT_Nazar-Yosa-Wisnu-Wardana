@@ -24,17 +24,18 @@ export default function CreateProduct() {
   //   });
   // }
 
-  async function action(productId) {
+  function action(productId) {
     history({
       pathname: `/create-product/${productId}`,
     });
   }
 
+  async function fetchDataFromAPI() {
+    const productsData = await FetchData();
+    setProducts(productsData);
+  }
+
   useEffect(() => {
-    async function fetchDataFromAPI() {
-      const productsData = await FetchData();
-      setProducts(productsData);
-    }
     fetchDataFromAPI();
   }, []);
 
