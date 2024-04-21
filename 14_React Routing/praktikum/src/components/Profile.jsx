@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import FetchDataById from "../FetchDataById";
 
 export default function Profile() {
@@ -10,11 +10,12 @@ export default function Profile() {
 
     async function fetchData() {
       const data = await FetchDataById(id);
-          console.log(data);
-      setProduct(data[0]); // Karena data dari FetchDataById adalah array, kita ambil elemen pertama
+          console.log(data); 
+      setProduct(data[0]); //Karena data dari FetchDataById adalah array, kita ambil elemen pertama
     }
     fetchData();
   }, [id]);
+
 
   return (
     <div className="flex justify-center items-center h-full">

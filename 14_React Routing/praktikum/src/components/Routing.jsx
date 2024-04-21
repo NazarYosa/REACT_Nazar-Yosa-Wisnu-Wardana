@@ -4,7 +4,6 @@ import LandingPage from "./LandingPage";
 import CreateProduct from "./CreateProduct"
 import Profile from "./Profile.jsx"
 
-
 export default function Routing() {
   return (
     <Router>
@@ -16,3 +15,5 @@ export default function Routing() {
     </Router>
   );
 }
+
+
