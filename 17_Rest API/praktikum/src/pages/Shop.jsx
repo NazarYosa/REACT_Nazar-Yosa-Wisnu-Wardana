@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { checkLogin }  from "../utils/checkLogin";
 import axios from "axios";
 
 export default function Shop() {
@@ -7,15 +9,20 @@ export default function Shop() {
   const [umur, setUmur] = useState("");
   const [edit, setEdit] = useState("");
   const link = useRef(null);
+  const navigate = useNavigate()
 
   async function fetchData() {
     const response = await axios.get(import.meta.env.VITE_API_URL);
     setData(response.data);
   }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+useEffect(() => {
+  fetchData();
+  if (!checkLogin()) {
+    navigate("/login");
+  }
+}, []);
+
 
   function handleSubmit(e) {
     e.preventDefault();

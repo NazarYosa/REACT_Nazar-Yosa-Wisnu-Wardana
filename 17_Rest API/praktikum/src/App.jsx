@@ -1,10 +1,10 @@
 import React from 'react'
-import Shop from './Shop'
+import Routing from './Routing'
 
 export default function App() {
   return (
     <>
-      <Shop />
+      <Routing />
     </>
   )
 }
