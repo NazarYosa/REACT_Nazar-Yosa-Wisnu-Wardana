@@ -3,10 +3,10 @@ import React, { useState } from "react";
 export default function OpenAIExample() {
   const [respond, setRespond] = useState();
   const [prompt, setPrompt] = useState("");
-  const [isSubmit, setIsSubmit] = useState(false)
+  const [isSubmit, setIsSubmit] = useState(false);
 
   async function handleSubmit(e) {
-    setIsSubmit(true)
+    setIsSubmit(true);
     e.preventDefault();
     const ApiBody = {
       model: "gpt-4",
@@ -20,7 +20,7 @@ export default function OpenAIExample() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + import.meta.env.VITE_API_KEY,
+            // Authorization: "Bearer " + import.meta.env.VITE_API_KEY
           },
           body: JSON.stringify(ApiBody),
         }
@@ -32,7 +32,7 @@ export default function OpenAIExample() {
 
       const data = await response.json();
       setRespond(data.choices[0].message.content);
-      setPrompt("")
+      setPrompt("");
       setIsSubmit(false);
     } catch (error) {
       console.error("Error:", error);
