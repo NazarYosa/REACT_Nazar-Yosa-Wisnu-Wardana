@@ -5,7 +5,7 @@ export default function OpenAIExample() {
   const [prompt, setPrompt] = useState("");
   const [isSubmit, setIsSubmit] = useState(false)
 
-  const API_KEY = "sk-proj-ANgs1hAvNP8Sraw9QXo6T3BlbkFJiZszRNc9NQGPcYoSzB0e";
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   async function handleSubmit(e) {
     setIsSubmit(true)
