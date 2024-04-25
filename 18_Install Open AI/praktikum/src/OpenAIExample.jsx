@@ -5,8 +5,6 @@ export default function OpenAIExample() {
   const [prompt, setPrompt] = useState("");
   const [isSubmit, setIsSubmit] = useState(false)
 
-  const ApiOpen = import.meta.env.VITE_API_KEY;
-
   async function handleSubmit(e) {
     setIsSubmit(true)
     e.preventDefault();
@@ -22,7 +20,7 @@ export default function OpenAIExample() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + ApiOpen,
+            Authorization: "Bearer " + import.meta.env.VITE_API_KEY,
           },
           body: JSON.stringify(ApiBody),
         }
