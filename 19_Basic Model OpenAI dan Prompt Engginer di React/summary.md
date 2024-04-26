@@ -1,0 +1,5 @@
+1. **Misi dan Fokus**: OpenAI adalah organisasi riset yang didedikasikan untuk mengembangkan kecerdasan buatan (AI) yang aman dan bermanfaat bagi seluruh umat manusia. Mereka berusaha memastikan bahwa pengembangan AI dilakukan secara bertanggung jawab, dengan fokus pada keselamatan dan dampaknya terhadap masyarakat.
+
+2. **Produk dan Teknologi**: OpenAI terkenal dengan teknologi model bahasa besarnya, seperti GPT-3.5 dan GPT-4, yang digunakan dalam berbagai aplikasi, termasuk chatbot seperti ChatGPT. Mereka juga bekerja pada berbagai proyek terkait AI, seperti reinforcement learning, visi komputer, dan robotika.
+
+3. **Komunitas dan Kolaborasi**: OpenAI mendorong kolaborasi terbuka dan transparansi dalam penelitian AI. Mereka sering merilis makalah penelitian dan kode sumber untuk mendorong inovasi bersama komunitas ilmiah dan teknolog. Selain itu, OpenAI berkomitmen pada prinsip-prinsip etika dalam pengembangan AI dan mengadvokasi penggunaan AI untuk tujuan yang bermanfaat dan tidak merugikan.
