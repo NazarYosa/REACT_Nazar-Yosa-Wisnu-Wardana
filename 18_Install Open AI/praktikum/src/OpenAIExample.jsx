@@ -5,8 +5,11 @@ export default function OpenAIExample() {
   const [prompt, setPrompt] = useState("");
   const [isSubmit, setIsSubmit] = useState(false);
 
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
   async function handleSubmit(e) {
     setIsSubmit(true);
+    console.log(API_KEY);
     e.preventDefault();
     const ApiBody = {
       model: "gpt-4",
@@ -20,7 +23,7 @@ export default function OpenAIExample() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + import.meta.env.VITE_API_KEY
+            Authorization: "Bearer " + API_KEY,
           },
           body: JSON.stringify(ApiBody),
         }
